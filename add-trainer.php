@@ -1,4 +1,4 @@
-<html lang="en-us">
+<html>
   <head>
     <meta charset="UTF-8">
     <title>TicTrainer registration for trainers</title>
