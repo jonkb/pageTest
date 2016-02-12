@@ -19,14 +19,18 @@
 
     <section class="main-content">
       <!--FORM Replace action="" with real .php script-->
-      <form action="" name="makeUser" method="POST">
+      <form action="add-trainer.php" name="makeUser" method="POST">
         <fieldset>
           <legend>New Account</legend>
           First Name: <br>
-          <input type="text" name="fName"> <br>
-          Birth Year: <br>
-          <input type:"text" name="birth" value="mm/dd/yyyy"> <br>
-          <input type="submit" value="Submit" style="margin-top: 4mm">
+          <input type="text" name="fName" required> <br>
+          Birth Date: <br>
+          <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
+          Password: <br>
+          <input type="password" name="password" required> <br>
+          Confirm Password: <br>
+          <input type="password" name="passwordConf" required> <br>
+          <input type="submit" value="Create Account" style="margin-top: 4mm">
         </fieldset>
       </form>
 
