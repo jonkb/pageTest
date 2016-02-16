@@ -80,10 +80,15 @@
         <button onclick="addT()" style="margin-top: 4mm">Create Account</button>
       </fieldset>
       
+      <button onclick="test()" style="margin-top: 4mm">Create Account</button>
+      
       <p id = "result0"></p>
       <p id = "result"></p>
       
       <script>
+        function test(){
+          document.getElementById("result0").innerHTML = "TEST";
+        }
         function addT(){
           document.getElementById("result0").innerHTML = "Result:";
           var n1 = document.getElementsByName("fName")[0];
