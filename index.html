@@ -80,10 +80,12 @@
         <button onclick="addT()" style="margin-top: 4mm">Create Account</button>
       </fieldset>
       
+      <p id = "result0"></p>
       <p id = "result"></p>
       
       <script>
         function addT(){
+          document.getElementById("result0").innerHTML = "Result:";
           var n1 = document.getElementsByName("fName")[0];
           var bd = document.getElementsByName("birth")[0];
           var pw = document.getElementsByName("password")[0];
