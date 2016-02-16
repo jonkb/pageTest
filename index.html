@@ -33,6 +33,42 @@
           <input type="submit" value="Create Account" style="margin-top: 4mm">
         </fieldset>
       </form>
+      
+      <!--FORM Replace action="" with real .php script-->
+      <form action="" name="makeUser" onsubmit="addT()">
+        <fieldset>
+          <legend>New Account (""+JS)</legend>
+          First Name: <br>
+          <input type="text" name="fName" required> <br>
+          Birth Date: <br>
+          <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
+          Password: <br>
+          <input type="password" name="password" required> <br>
+          Confirm Password: <br>
+          <input type="password" name="passwordConf" required> <br>
+          <input type="submit" value="Create Account" style="margin-top: 4mm">
+        </fieldset>
+      </form>
+      
+      <p id = "result"></p>
+      
+      <script>
+        function addT(){
+          var n1 = document.getElementsByName("fName")[0];
+          var bd = document.getElementsByName("birth")[0];
+          var pw = document.getElementsByName("password")[0];
+          var pwc = document.getElementsByName("passwordConf")[0];
+            if(pw == pwc){
+              var res = "Here is your new user data:\nFirst Name: "
+                +n1 + "\nBirth Date: "
+                +bd + "\nPassword: "
+                +pw + "\n\nYour User ID is: "
+                +"t1111";//Replace with value from file
+              document.getElementById("result").innerHTML = res;
+            }
+          }
+        }
+      </script>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/KBMD/tictrainer">Tictrainer</a> is maintained by <a href="https://github.com/KBMD">KBMD</a>.</span>
