@@ -13,33 +13,66 @@
     <section class="page-header">
       <h1>TEST | new style things | TEST</h1>
       <h2>Trainer Account Registration</h2>
+      <a class=".btn" href="https://www.google.com">Google</a>
     </section>
     
     <section class="main-content">
+      <a class=".btn" href="https://www.google.com">Google</a>
     
-    <a href="test.html">Test.html</a>
-    
-    
-    <!--FORM Replace action="" with real .php script-->
-    <form action="add-trainer.php" name="makeUser" method="POST">
+      <a href="test.html">Test.html</a>
+      
+      
+      <!--FORM Replace action="" with real .php script-->
+      <form action="add-trainer.php" name="makeUser" method="POST">
+        <fieldset>
+          <legend>New Account</legend>
+          First Name: <br>
+          <input type="text" name="fName" required> <br>
+          Birth Date: <br>
+          <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
+          Password: <br>
+          <input type="password" name="password" required> <br>
+          Confirm Password: <br>
+          <input type="password" name="passwordConf" required> <br>
+          <input type="submit" value="Create Account" style="margin-top: 4mm">
+        </fieldset>
+      </form>
+      
+      <!--FORM Replace action="" with real .php script-->
+      <form action="" name="makeUser" onsubmit="addT()">
+        <fieldset>
+          <legend>New Account (""+JS)</legend>
+          First Name: <br>
+          <input type="text" name="fName" required> <br>
+          Birth Date: <br>
+          <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
+          Password: <br>
+          <input type="password" name="password" required> <br>
+          Confirm Password: <br>
+          <input type="password" name="passwordConf" required> <br>
+          <button onclick="addT()" style="margin-top: 4mm">Create Account</button>
+        </fieldset>
+      </form>
+      
+      <!--FORM Replace action="" with real .php script-->
+      <form onsubmit="addT()">
+        <fieldset>
+          <legend>New Account (""+JS-php)</legend>
+          First Name: <br>
+          <input type="text" name="fName" required> <br>
+          Birth Date: <br>
+          <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
+          Password: <br>
+          <input type="password" name="password" required> <br>
+          Confirm Password: <br>
+          <input type="password" name="passwordConf" required> <br>
+          <input type="submit" value="Create Account" style="margin-top: 4mm">
+        </fieldset>
+      </form>
+      
+      <!--NOT FORM Replace action="" with real .php script-->
       <fieldset>
-        <legend>New Account</legend>
-        First Name: <br>
-        <input type="text" name="fName" required> <br>
-        Birth Date: <br>
-        <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
-        Password: <br>
-        <input type="password" name="password" required> <br>
-        Confirm Password: <br>
-        <input type="password" name="passwordConf" required> <br>
-        <input type="submit" value="Create Account" style="margin-top: 4mm">
-      </fieldset>
-    </form>
-    
-    <!--FORM Replace action="" with real .php script-->
-    <form action="" name="makeUser" onsubmit="addT()">
-      <fieldset>
-        <legend>New Account (""+JS)</legend>
+        <legend>New Account (""+JS-form)</legend>
         First Name: <br>
         <input type="text" name="fName" required> <br>
         Birth Date: <br>
@@ -50,73 +83,42 @@
         <input type="password" name="passwordConf" required> <br>
         <button onclick="addT()" style="margin-top: 4mm">Create Account</button>
       </fieldset>
-    </form>
-    
-    <!--FORM Replace action="" with real .php script-->
-    <form onsubmit="addT()">
-      <fieldset>
-        <legend>New Account (""+JS-php)</legend>
-        First Name: <br>
-        <input type="text" name="fName" required> <br>
-        Birth Date: <br>
-        <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
-        Password: <br>
-        <input type="password" name="password" required> <br>
-        Confirm Password: <br>
-        <input type="password" name="passwordConf" required> <br>
-        <input type="submit" value="Create Account" style="margin-top: 4mm">
-      </fieldset>
-    </form>
-    
-    <!--NOT FORM Replace action="" with real .php script-->
-    <fieldset>
-      <legend>New Account (""+JS-form)</legend>
-      First Name: <br>
-      <input type="text" name="fName" required> <br>
-      Birth Date: <br>
-      <input type:"text" name="birth" placeholder="mm/dd/yyyy" required> <br>
-      Password: <br>
-      <input type="password" name="password" required> <br>
-      Confirm Password: <br>
-      <input type="password" name="passwordConf" required> <br>
-      <button onclick="addT()" style="margin-top: 4mm">Create Account</button>
-    </fieldset>
-    
-    <button onclick="test()" style="margin-top: 4mm">Test</button>
-    
-    <p id = "result0"></p>
-    <p id = "result"></p>
-    
-    <script>
-      function test(){
-        document.getElementById("result0").innerHTML = "TEST";
-      }
-      function addT(){
-        document.getElementById("result0").innerHTML = "Result:";
-        var n1 = document.getElementsByName("fName")[0];
-        var bd = document.getElementsByName("birth")[0];
-        var pw = document.getElementsByName("password")[0];
-        var pwc = document.getElementsByName("passwordConf")[0];
-          if(pw == pwc){
-            var res = "Here is your new user data:\nFirst Name: "
-              +n1 + "\nBirth Date: "
-              +bd + "\nPassword: "
-              +pw + "\n\nYour User ID is: "
-              +"t1111";//Replace with value from file
-            document.getElementById("result").innerHTML = res;
-          }
-          else{
-            document.getElementById("result").innerHTML = "Error";
-          }
+      
+      <button onclick="test()" style="margin-top: 4mm">Test</button>
+      
+      <p id = "result0"></p>
+      <p id = "result"></p>
+      
+      <script>
+        function test(){
+          document.getElementById("result0").innerHTML = "TEST";
+        }
+        function addT(){
+          document.getElementById("result0").innerHTML = "Result:";
+          var n1 = document.getElementsByName("fName")[0];
+          var bd = document.getElementsByName("birth")[0];
+          var pw = document.getElementsByName("password")[0];
+          var pwc = document.getElementsByName("passwordConf")[0];
+            if(pw == pwc){
+              var res = "Here is your new user data:\nFirst Name: "
+                +n1 + "\nBirth Date: "
+                +bd + "\nPassword: "
+                +pw + "\n\nYour User ID is: "
+                +"t1111";//Replace with value from file
+              document.getElementById("result").innerHTML = res;
+            }
+            else{
+              document.getElementById("result").innerHTML = "Error";
+            }
+            }
           }
         }
-      }
-    </script>
-
-    <footer class="site-footer">
-      <span class="site-footer-owner"><a href="https://github.com/KBMD/tictrainer">Tictrainer</a> is maintained by <a href="https://github.com/KBMD">KBMD</a>.</span>
-      <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-    </footer>
+      </script>
+  
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/KBMD/tictrainer">Tictrainer</a> is maintained by <a href="https://github.com/KBMD">KBMD</a>.</span>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
     
     </section><!--/main-content-->
   
