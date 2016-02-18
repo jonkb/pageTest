@@ -30,7 +30,7 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  padding: .8rem;
+  padding: .7rem;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
@@ -51,7 +51,7 @@ a {
   text-align: center;
   display: inline-block;
   margin-bottom: 1rem;
-  padding: .8rem;
+  padding: .7rem;
   color: rgba(255, 255, 255, 0.8);
   background-color: #159957;
   border-color: #1fe080;
@@ -77,7 +77,7 @@ a {
     margin: 0 auto; } 
   .btn, .btn-main {
     display: block;
-    padding: .8rem 1.2rem;
+    padding: 1.2rem .8rem;
   }
 }
 
