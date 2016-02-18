@@ -46,7 +46,7 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
-.btn2 {
+.btn-main {
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.8);
@@ -59,7 +59,7 @@ a {
   /*.btn + .btn {
     margin-left: 1rem; }*/
 
-.btn2:hover {
+.btn-main:hover {
   color: rgba(255, 255, 255, 0.88));
   text-decoration: none;
   background-color: #1ac16e;
