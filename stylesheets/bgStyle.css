@@ -66,7 +66,7 @@ a {
   }
   
 /*Conditional on screen size:*/
-@media (min-width: 64em) {/*BIG*/
+@media (min-width: 64rem) {/*BIG*/
   .main-content {
     max-width: 64rem;
     padding: 2rem 6rem;/*: top-bottom left-right;*/
@@ -77,7 +77,7 @@ a {
   }
 }
 
-@media (min-width: 42em) and (max-width: 64em) {/*MED*/
+@media (min-width: 42rem) and (max-width: 64rem) {/*MED*/
   .main-content {
     padding: 2rem 4rem;
   }
@@ -87,7 +87,7 @@ a {
   }
 }
 
-@media (max-width: 42em) {/*Phone*/
+@media (max-width: 42rem) {/*Phone*/
   .main-content {
     padding: 2rem 1rem;
   }
