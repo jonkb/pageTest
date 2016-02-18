@@ -30,21 +30,41 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s; }
-  .btn + .btn {
-    margin-left: 1rem; }
+  /*.btn + .btn {
+    margin-left: 1rem; }*/
 
 .btn:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
+
+.btn2 {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #159957;
+  border-color: #1fe080;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s; }
+  /*.btn + .btn {
+    margin-left: 1rem; }*/
+
+.btn2:hover {
+  color: rgba(255, 255, 255, 0.88));
+  text-decoration: none;
+  background-color: #1ac16e;
+  border-color: #4be799;
+  }
   
 /*Conditional on screen size*/
 @media (min-width: 64em) {/*BIG*/
