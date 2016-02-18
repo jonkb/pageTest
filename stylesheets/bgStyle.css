@@ -84,10 +84,7 @@ a {
   .main-content {
     padding: 2rem 1rem;
   }
-  .btn {
-    display: block;
-  }
-  .btn-main {
+  .btn, .btn-main {
     display: block;
   }
 }
