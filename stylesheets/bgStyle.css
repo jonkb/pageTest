@@ -45,7 +45,7 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
-.btn-main {
+.main-content btn {
   text-align: center;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.8);
@@ -58,14 +58,14 @@ a {
   /*.btn + .btn {
     margin-left: 1rem; }*/
 
-.btn-main:hover {
+.main-content btn:hover {
   color: rgba(255, 255, 255, 0.88));
   text-decoration: none;
   background-color: #1ac16e;
   border-color: #4be799;
   }
   
-/*Conditional on screen size*/
+/*Conditional on screen size:*/
 @media (min-width: 64em) {/*BIG*/
   .main-content {
     max-width: 64rem;
