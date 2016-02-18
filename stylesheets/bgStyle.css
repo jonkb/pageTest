@@ -86,4 +86,7 @@ a {
   .btn {
     display: block;
   }
+  .btn-main {
+    display: block;
+  }
 }
