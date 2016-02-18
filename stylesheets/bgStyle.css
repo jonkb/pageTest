@@ -69,7 +69,7 @@ a {
 @media (min-width: 64rem) {/*BIG*/
   .main-content {
     max-width: 64rem;
-    padding: 2rem 6rem;/*: top-bottom left-right;*/
+    padding: 2rem 4rem;/*: top-bottom left-right;*/
     margin: 0 auto; } 
   .btn, .btn-main {
     display: inline-block;
@@ -80,7 +80,7 @@ a {
 
 @media (min-width: 42rem) and (max-width: 64rem) {/*MED*/
   .main-content {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
   .btn, .btn-main {
     display: inline-block;
